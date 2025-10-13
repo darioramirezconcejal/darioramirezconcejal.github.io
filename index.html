@@ -1,304 +1,305 @@
 <!DOCTYPE html>
-		<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-		<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-		<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-		<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darío Ramírez Concejal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
 
-		<head>
-			<meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<title>Dario Ramirez Concejal</title>
-			<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
-			<meta name="author" content="Esteban Guzzo" />
-			<meta name="viewport" content="width=device-width, initial-scale=1">
+    body {
+      background-color: #f5f5f5;
+      color: #222;
+      scroll-behavior: smooth;
+    }
 
-			<!-- LOAD JQUERY LIBRARY -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-			
-			<!-- LOADING FONTS AND ICONS -->
-			<link href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: url('dario-ramirez.jpg') center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 0 5% 60px;
+    }
 
-			
-			<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-			<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-			
-			<!-- REVOLUTION STYLE SHEETS -->
-			<link rel="stylesheet" type="text/css" href="css/rs6.css">
-			<!-- REVOLUTION LAYERS STYLES -->
-						<!-- REVOLUTION JS FILES -->
-			
-		<script>
-			window.RS_MODULES = window.RS_MODULES || {};
-			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
-			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
-			window.RS_MODULES.defered = true;
-			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
-			window.RS_MODULES.type = 'compiled';
-		</script>
-					<script src="js/rbtools.min.js"></script>
-							<script src="js/rs6.min.js"></script>
-							
-			<script>function setREVStartSize(e){
-			//window.requestAnimationFrame(function() {
-				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
-				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
-				try {
-					var pw = document.getElementById(e.c).parentNode.offsetWidth,
-						newh;
-					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
-					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
-					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
-					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
-					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
-					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
-					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
-					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
-					if(e.layout==="fullscreen" || e.l==="fullscreen")
-						newh = Math.max(e.mh,window.RSIH);
-					else{
-						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
-						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
-						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
-						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
-											
-						var nl = new Array(e.rl.length),
-							ix = 0,
-							sl;
-						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
-						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
-						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
-						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
-						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
-						sl = nl[0];
-						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
-						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
-						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
-					}
-					var el = document.getElementById(e.c);
-					if (el!==null && el) el.style.height = newh+"px";
-					el = document.getElementById(e.c+"_wrapper");
-					if (el!==null && el) {
-						el.style.height = newh+"px";
-						el.style.display = "block";
-					}
-				} catch(e){
-					console.log("Failure at Presize of Slider:" + e)
-				}
-			//});
-		  };</script>
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.15) 50%, transparent 100%);
+      z-index: 0;
+    }
 
-			
-		</head>
-		
-		<body style="margin: 0px;">
-		
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+      max-width: 1200px;
+    }
 
-			<!-- START Dario Ramirez REVOLUTION SLIDER 6.6.20 --><p class="rs-p-wp-fix"></p>
-			<rs-module-wrap id="rev_slider_22_1_wrapper" data-alias="concejal" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;">
-				<rs-module id="rev_slider_22_1" style="" data-version="6.6.20">
-					<rs-slides style="overflow: hidden; position: absolute;">
-						<rs-slide style="position: absolute;" data-key="rs-80" data-title="Slide" data-in="o:0;" data-out="a:false;">
-							<img src="assets/fondo1920.png" alt="" title="fondo1920" width="1920" height="1080" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
-<!--
-							--><rs-layer
-								id="slider-22-slide-80-layer-1" 
-								data-type="image"
-								data-rsp_ch="on"
-								data-xy="x:66px;y:140px;"
-								data-text="w:normal;"
-								data-dim="w:345px;h:301px;"
-								data-frame_0="x:-50;"
-								data-frame_1="st:1100;sp:1000;sR:1100;"
-								data-frame_999="o:0;st:w;sR:6900;"
-								style="z-index:5;"
-							><img src="assets/Vota-por-los-que-votan-por-vos.png" alt="" class="tp-rs-img" width="345" height="301" data-no-retina> 
-							</rs-layer><!--
+    .hero-content {
+      color: white;
+      max-width: 600px;
+      animation: fadeUp 1.5s ease-out forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
 
-							--><rs-layer
-								id="slider-22-slide-80-layer-2" 
-								data-type="image"
-								data-rsp_ch="on"
-								data-xy="x:60px;y:752px;"
-								data-text="w:normal;"
-								data-dim="w:530px;h:151px;"
-								data-frame_0="y:50;"
-								data-frame_1="st:470;sp:1000;sR:470;"
-								data-frame_999="o:0;st:w;sR:7530;"
-								style="z-index:6;"
-							><img src="assets/Flavia.png" alt="" class="tp-rs-img" width="637" height="182" data-no-retina> 
-							</rs-layer><!--
+    .hero-content p {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    }
 
-							--><rs-layer
-								id="slider-22-slide-80-layer-3" 
-								data-type="image"
-								data-rsp_ch="on"
-								data-xy="x:60px;y:912px;"
-								data-text="w:normal;"
-								data-dim="w:823px;h:152px;"
-								data-frame_0="y:50;"
-								data-frame_1="sp:1000;"
-								data-frame_999="o:0;st:w;sR:8000;"
-								style="z-index:7;"
-							><img src="assets/Peralta.png" alt="" class="tp-rs-img" width="977" height="181" data-no-retina> 
-							</rs-layer><!--
+    .hero-content h1 {
+      font-size: 4.5rem;
+      font-weight: 900;
+      line-height: 1.1;
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    }
 
-							--><rs-layer
-								id="slider-22-slide-80-layer-4" 
-								data-type="image"
-								data-rsp_ch="on"
-								data-xy="x:1568px;y:800px;"
-								data-text="w:normal;"
-								data-dim="w:161px;h:196px;"
-								data-frame_0="y:200%;sX:2;sY:2;o:1;rX:-20deg;rY:-20deg;"
-								data-frame_1="e:power3.out;st:2090;sp:1000;sR:2090;"
-								data-frame_999="o:0;st:w;sR:5910;"
-								style="z-index:8;"
-							><img src="assets/Grupo_.png" alt="" class="tp-rs-img" width="161" height="196" data-no-retina> 
-							</rs-layer><!--
+    .logo {
+      width: 120px;
+      animation: fadeLogo 1.8s ease-out forwards;
+      opacity: 0;
+      transform: translateY(40px);
+    }
 
-							--><rs-layer
-								id="slider-22-slide-80-layer-5" 
-								data-type="image"
-								data-rsp_ch="on"
-								data-xy="x:1566px;y:704px;"
-								data-text="w:normal;"
-								data-dim="w:305px;h:79px;"
-								data-frame_0="x:100%;"
-								data-frame_0_mask="u:t;"
-								data-frame_1="st:3060;sp:1000;sR:3060;"
-								data-frame_1_mask="u:t;"
-								data-frame_999="o:0;st:w;sR:4940;"
-								style="z-index:9;"
-							><img src="assets/diputada-provincial.png" alt="" class="tp-rs-img" width="305" height="79" data-no-retina> 
-							</rs-layer><!--
--->						</rs-slide>
-						<rs-slide style="position: absolute;" data-key="rs-81" data-title="Slide" data-in="o:0;" data-out="a:false;">
-							<img src="assets/fondo1920.png" alt="" title="fondo1920" width="1920" height="1080" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
-<!--
-							--><rs-layer
-								id="slider-22-slide-81-layer-1" 
-								data-type="image"
-								data-rsp_ch="on"
-								data-xy="x:66px;y:140px;"
-								data-text="w:normal;"
-								data-dim="w:345px;h:301px;"
-								data-frame_0="x:-50;"
-								data-frame_1="st:1100;sp:1000;sR:1100;"
-								data-frame_999="o:0;st:w;sR:6900;"
-								style="z-index:5;"
-							><img src="assets/Vota-por-los-que-votan-por-vos.png" alt="" class="tp-rs-img" width="345" height="301" data-no-retina> 
-							</rs-layer><!--
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-							--><rs-layer
-								id="slider-22-slide-81-layer-2" 
-								data-type="image"
-								data-rsp_ch="on"
-								data-xy="x:60px;y:752px;"
-								data-text="w:normal;"
-								data-dim="w:530px;h:151px;"
-								data-frame_0="y:50;"
-								data-frame_1="st:470;sp:1000;sR:470;"
-								data-frame_999="o:0;st:w;sR:7530;"
-								style="z-index:6;"
-							><img src="assets/Flavia.png" alt="" class="tp-rs-img" width="637" height="182" data-no-retina> 
-							</rs-layer><!--
+    @keyframes fadeLogo {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-							--><rs-layer
-								id="slider-22-slide-81-layer-3" 
-								data-type="image"
-								data-rsp_ch="on"
-								data-xy="x:60px;y:912px;"
-								data-text="w:normal;"
-								data-dim="w:823px;h:152px;"
-								data-frame_0="y:50;"
-								data-frame_1="sp:1000;"
-								data-frame_999="o:0;st:w;sR:8000;"
-								style="z-index:7;"
-							><img src="assets/Peralta.png" alt="" class="tp-rs-img" width="977" height="181" data-no-retina> 
-							</rs-layer><!--
+    /* PROPUESTAS */
+    .propuestas {
+      max-width: 1000px;
+      margin: 100px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
 
-							--><rs-layer
-								id="slider-22-slide-81-layer-4" 
-								data-type="image"
-								data-rsp_ch="on"
-								data-xy="x:1568px;y:800px;"
-								data-text="w:normal;"
-								data-dim="w:161px;h:196px;"
-								data-frame_0="y:200%;sX:2;sY:2;o:1;rX:-20deg;rY:-20deg;"
-								data-frame_1="e:power3.out;st:2090;sp:1000;sR:2090;"
-								data-frame_999="o:0;st:w;sR:5910;"
-								style="z-index:8;"
-							><img src="assets/Grupo_.png" alt="" class="tp-rs-img" width="161" height="196" data-no-retina> 
-							</rs-layer><!--
+    .propuesta {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-							--><rs-layer
-								id="slider-22-slide-81-layer-5" 
-								data-type="image"
-								data-rsp_ch="on"
-								data-xy="x:1566px;y:704px;"
-								data-text="w:normal;"
-								data-dim="w:305px;h:79px;"
-								data-frame_0="x:100%;"
-								data-frame_0_mask="u:t;"
-								data-frame_1="st:3060;sp:1000;sR:3060;"
-								data-frame_1_mask="u:t;"
-								data-frame_999="o:0;st:w;sR:4940;"
-								style="z-index:9;"
-							><img src="assets/diputada-provincial.png" alt="" class="tp-rs-img" width="305" height="79" data-no-retina> 
-							</rs-layer><!--
--->						</rs-slide>
-					</rs-slides>
-				</rs-module>
-				<script>
-					
-				</script>
-<script>
-		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
-</script>
-			</rs-module-wrap>
-			<!-- END REVOLUTION SLIDER -->
+    .propuesta:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    }
 
-				<script>
-					var	tpj = jQuery;
-					if(window.RS_MODULES === undefined) window.RS_MODULES = {};
-					if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
-					RS_MODULES.modules["revslider221"] = {once: RS_MODULES.modules["revslider221"]!==undefined ? RS_MODULES.modules["revslider221"].once : undefined, init:function() {
-						window.revapi22 = window.revapi22===undefined || window.revapi22===null || window.revapi22.length===0  ? document.getElementById("rev_slider_22_1") : window.revapi22;
-						if(window.revapi22 === null || window.revapi22 === undefined || window.revapi22.length==0) { window.revapi22initTry = window.revapi22initTry ===undefined ? 0 : window.revapi22initTry+1; if (window.revapi22initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider221"].init()}); return;}
-						window.revapi22 = jQuery(window.revapi22);
-						if(window.revapi22.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_22_1"); return;}
-						revapi22.revolutionInit({
-								revapi:"revapi22",
-								DPR:"dpr",
-								sliderLayout:"fullscreen",
-								visibilityLevels:"1240,1024,778,480",
-								gridwidth:1920,
-								gridheight:1080,
-								perspective:600,
-								perspectiveType:"global",
-								editorheight:"1080,768,960,720",
-								responsiveLevels:"1240,1024,778,480",
-								progressBar:{disableProgressBar:true},
-								navigation: {
-									onHoverStop:false
-								},
-								viewPort: {
-									global:false,
-									globalDist:"-200px",
-									enable:false
-								},
-								fallbacks: {
-									allowHTML5AutoPlayOnAndroid:true
-								},
-						});
-						
-					}} // End of RevInitScript
-					if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
-				</script>
+    .propuesta h2 {
+      color: #0d47a1;
+      margin-bottom: 10px;
+    }
 
+    .propuesta p {
+      line-height: 1.5;
+      font-size: 1rem;
+    }
 
+/* REDES SOCIALES */
+.redes-sociales {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f0f0f0;
+}
 
-		</body>
-				</html>
-		
+.redes-sociales h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0d47a1;
+}
+
+.redes-sociales .iconos a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 2rem; /* tamaño de los íconos */
+  color: #00a8e8;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociales .iconos a:hover {
+  color: #0093cc;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .redes-sociales h2 {
+    font-size: 1.5rem;
+  }
+
+  .redes-sociales .iconos a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+  }
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #0d47a1;
+  color: white;
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #00a8e8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+    /* SECCIÓN DÓNDE VOTO */
+    .donde-voto {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #ffffff;
+    }
+
+    .donde-voto h2 {
+      font-size: 2.5rem;
+      color: #0d47a1;
+      margin-bottom: 20px;
+    }
+
+    .donde-voto p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .btn-celeste {
+      display: inline-block;
+      background-color: #00a8e8;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-celeste:hover {
+      background-color: #0093cc;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0, 168, 232, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 0 20px 40px;
+      }
+
+      .hero-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .hero-content h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero-content p {
+        font-size: 1.3rem;
+      }
+
+      .logo {
+        width: 80px;
+      }
+
+      .donde-voto h2 {
+        font-size: 2rem;
+      }
+
+      .btn-celeste {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p>Votá<br>por los<br>que votan<br>por vos</p>
+        <h1>Darío<br>Ramírez</h1>
+        <p>Concejal</p>
+      </div>
+      <img src="logo.png" alt="Fuerza Patria" class="logo" />
+    </div>
+  </section>
+
+  <section class="propuestas">
+    <div class="propuesta">
+      <h2>✔ Seguridad y Transparencia</h2>
+      <p>Impulsar políticas de seguridad barrial con participación vecinal y total transparencia en la gestión pública.</p>
+    </div>
+    <div class="propuesta">
+      <h2>🌳 Espacios Públicos Vivos</h2>
+      <p>Recuperar y mantener plazas, parques y espacios verdes para fomentar el encuentro y la actividad cultural.</p>
+    </div>
+    <div class="propuesta">
+      <h2>💼 Trabajo Local</h2>
+      <p>Promover emprendimientos, ferias y programas de capacitación para fortalecer la economía de los vecinos.</p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DÓNDE VOTO -->
+  <section class="donde-voto">
+    <h2>¿Dónde voto?</h2>
+    <p>Consultá tu lugar de votación y verificá tus datos en el padrón electoral oficial.</p>
+    <a href="https://www.padron.gob.ar/" target="_blank" class="btn-celeste">Consultar padrón electoral</a>
+  </section>
+
+<!-- SECCIÓN REDES SOCIALES -->
+<section class="redes-sociales">
+  <h2>Seguime en las redes</h2>
+  <div class="iconos">
+    <a href="https://www.facebook.com/profile.php?id=61580021517259" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/dario.ramirezok/" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+  <p>contacto@darioramirezconcejal.com.ar</p>
+</footer>
+</body>
+</html>
